@@ -1,0 +1,50 @@
+.project {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project h1 {
+  margin-top: 3vw;
+  color: bisque;
+  font-size: 50px;
+}
+.project img {
+  width: 50vw;
+  min-width: 319px;
+  border-radius: 10px;
+}
+
+.project p {
+  text-align: center;
+  font-size: 40px;
+  color: bisque;
+}
+
+.project svg {
+  font-size: 60px;
+  color: rgb(243, 237, 129);
+  margin-left: 30px;
+}
+.project svg:hover {
+  color: rgb(129, 188, 243);
+}
+@media only screen and (max-width: 600px) {
+  .project img {
+    /* transform: translateY(-120px); */
+  }
+  .project svg {
+    /* transform: translateY(-120px); */
+  }
+  .project h1 {
+    font-size: 7vw;
+    /* transform: translateY(-120px); */
+  }
+  .project p {
+    /* transform: translateY(-120px); */
+    font-size: 5vw;
+  }
+}
