@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Tektur", cursive;
 }
 
 .project h1 {
@@ -14,6 +15,7 @@
 }
 .project img {
   width: 50vw;
+  max-height: 500px;
   min-width: 319px;
   border-radius: 10px;
 }

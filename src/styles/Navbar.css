@@ -2,6 +2,7 @@
   max-width: 100vw;
   height: 100px;
   background-image: linear-gradient(to right, #3f6df6, #66a3ff);
+  font-family: "Tektur", cursive;
 }
 .download {
   white-space: nowrap;

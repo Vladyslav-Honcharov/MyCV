@@ -1,8 +1,9 @@
 .home {
   width: 100%;
   align-items: center;
-  font-family: "Arial", sans-serif;
+
   color: #899ae2;
+  font-family: "Tektur", cursive;
 }
 
 .about {
@@ -23,7 +24,7 @@
   color: black;
 }
 .about h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tektur", cursive;
   font-size: 60px;
   color: #fbdb28c8;
   height: 50px;

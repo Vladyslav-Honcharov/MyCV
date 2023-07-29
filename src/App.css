@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap");
 .App {
+  font-family: "Tektur", cursive;
   max-width: 100vw;
   height: auto;
   display: flex;
@@ -8,6 +10,7 @@
 }
 
 body {
+  font-family: "Tektur", cursive;
   padding: 0;
   margin: 0;
 }

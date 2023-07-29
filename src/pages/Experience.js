@@ -14,7 +14,11 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2020 - 2024"
-          contentStyle={{ background: "#3e497a", color: "#fff" }}
+          contentStyle={{
+            background: "#3e497a",
+            color: "#fff",
+            fontFamily: "Tektur, cursive",
+          }}
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
@@ -26,7 +30,11 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2022 - 2023"
-          contentStyle={{ background: "#3e497a", color: "#fff" }}
+          contentStyle={{
+            background: "#3e497a",
+            color: "#fff",
+            fontFamily: "Tektur, cursive",
+          }}
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
@@ -43,16 +51,23 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2020-2023"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{
+            background: "#e9d35b",
+            color: "#fff",
+            fontFamily: "Tektur, cursive",
+          }}
           contentStyle={{ background: "#e9d35b", color: "#000" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
+          <h3
+            className="vertical-timeline-element-title"
+            style={{ fontFamily: "Tektur, cursive" }}
+          >
             Affiliate-manager, Media Buyer
           </h3>
 
           <p>
-            <ul>
+            <ul style={{ fontFamily: "Tektur, cursive" }}>
               <li> Targeted advertising FB, UAC</li>
               <li> Working with the company's partners</li>
               <li> Management of a small part of the command</li>
@@ -63,7 +78,11 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2023"
-          contentStyle={{ background: "#e9d35b", color: "#000" }}
+          contentStyle={{
+            background: "#e9d35b",
+            color: "#000",
+            fontFamily: "Tektur, cursive",
+          }}
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
