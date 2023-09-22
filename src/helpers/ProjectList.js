@@ -8,8 +8,16 @@ import P7 from "../assets/p7.png";
 import P8 from "../assets/p8.png";
 import P9 from "../assets/p9.png";
 import P10 from "../assets/p10.png";
+import P11 from "../assets/p11.png";
 
 export const ProjectList = [
+  {
+    name: "Mystery",
+    image: P11,
+    skills: "React, Redux Toolkit, Axios, Formik, Yup, SASS, MU, MongoDB",
+    link: "https://online-internet-shop-dcf87eaec7f8.herokuapp.com/",
+    github: "https://github.com/grinchikk1/online-internet-shop/tree/main",
+  },
   {
     name: "Recipes",
     image: P1,

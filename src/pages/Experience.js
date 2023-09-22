@@ -44,7 +44,11 @@ function Experience() {
             React Front-end
           </h4>
 
-          <a href="#" className="certificate">
+          <a
+            href="https://dan-it.com.ua/certificates/frontend/vladyslav-honcharov/"
+            className="certificate"
+            target="_blank"
+          >
             Certificate
           </a>
         </VerticalTimelineElement>
