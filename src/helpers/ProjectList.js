@@ -9,14 +9,22 @@ import P8 from "../assets/p8.png";
 import P9 from "../assets/p9.png";
 import P10 from "../assets/p10.png";
 import P11 from "../assets/p11.png";
+import P12 from "../assets/p12.png";
 
 export const ProjectList = [
+  {
+    name: "LashMaker",
+    image: P12,
+    skills: "React, Axios, Formik, Yup, SASS, MU, firebase",
+    link: "https://sheshenyaira.vercel.app/",
+    github: "https://github.com/Vladyslav-Honcharov/ira_site",
+  },
   {
     name: "Mystery",
     image: P11,
     skills: "React, Redux Toolkit, Axios, Formik, Yup, SASS, MU, MongoDB",
-    link: "https://online-internet-shop-dcf87eaec7f8.herokuapp.com/",
-    github: "https://github.com/grinchikk1/online-internet-shop/tree/main",
+    link: "https://mystery-shop.vercel.app/",
+    github: "https://github.com/Vladyslav-Honcharov/mysrery_shop",
   },
   {
     name: "Recipes",
