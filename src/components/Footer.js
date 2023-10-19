@@ -4,8 +4,11 @@ import EmailIcon from "@material-ui/icons/Email";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import "../styles/Footer.css";
+import { useSelector } from "react-redux";
 
 function Footer() {
+  const currentLanguage = useSelector((state) => state.language.language);
+
   return (
     <div className="footer">
       <div className="socialMedia">
@@ -32,7 +35,7 @@ function Footer() {
       </div>
       <p className="location">
         <LocationOnIcon />
-        Kyiv, Ukraine
+        {currentLanguage === "en" ? "   Kyiv, Ukraine" : "Київ, Україна"}
       </p>
     </div>
   );

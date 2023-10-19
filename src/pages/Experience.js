@@ -1,3 +1,4 @@
+// Experience.js
 import React from "react";
 import {
   VerticalTimeline,
@@ -6,8 +7,12 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
+import { useSelector } from "react-redux";
+import translations from "../helpers/translations"; // Импортируйте файл с переводами
 
 function Experience() {
+  const currentLanguage = useSelector((state) => state.language.language);
+
   return (
     <div className="experience">
       <VerticalTimeline lineColor="#3e497a">
@@ -23,9 +28,9 @@ function Experience() {
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            University of Railway
+            {translations[currentLanguage].university}
           </h3>
-          <p> Faculty of Railway Transportation</p>
+          <p> {translations[currentLanguage].faculty}</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -38,10 +43,12 @@ function Experience() {
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Dan.IT Education</h3>
+          <h3 className="vertical-timeline-element-title">
+            {translations[currentLanguage].danItEducation}
+          </h3>
 
           <h4 className="vertical-timeline-element-subtitle">
-            React Front-end
+            {translations[currentLanguage].reactFrontEnd}
           </h4>
 
           <a
@@ -49,7 +56,7 @@ function Experience() {
             className="certificate"
             target="_blank"
           >
-            Certificate
+            {translations[currentLanguage].certificate}
           </a>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -67,14 +74,14 @@ function Experience() {
             className="vertical-timeline-element-title"
             style={{ fontFamily: "Tektur, cursive" }}
           >
-            Affiliate-manager, Media Buyer
+            {translations[currentLanguage].affiliateManager}
           </h3>
 
           <p>
             <ul style={{ fontFamily: "Tektur, cursive" }}>
-              <li> Targeted advertising FB, UAC</li>
-              <li> Working with the company's partners</li>
-              <li> Management of a small part of the command</li>
+              <li> {translations[currentLanguage].targetedAdvertising}</li>
+              <li> {translations[currentLanguage].workingWithPartners}</li>
+              <li> {translations[currentLanguage].teamManagement}</li>
             </ul>
           </p>
         </VerticalTimelineElement>
@@ -91,10 +98,10 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Web Development on freelance
+            {translations[currentLanguage].webDevelopmentFreelance}
           </h3>
 
-          <p>Development of landing pages</p>
+          <p>{translations[currentLanguage].developmentOfLandingPages}</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

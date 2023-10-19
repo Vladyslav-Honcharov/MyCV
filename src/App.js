@@ -1,3 +1,6 @@
+import React from "react";
+import { Provider } from "react-redux"; // Импортируйте Provider
+import store from "./redux/store"; // Подставьте путь к вашему Redux-стору
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -10,16 +13,18 @@ import ProjectDisplay from "./pages/ProjectDisplay";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/project/:id" element={<ProjectDisplay />} />
-          <Route path="/experience" element={<Experience />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/project/:id" element={<ProjectDisplay />} />
+            <Route path="/experience" element={<Experience />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </Provider>
     </div>
   );
 }

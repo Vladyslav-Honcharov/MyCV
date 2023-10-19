@@ -4,19 +4,23 @@ import { ProjectList } from "../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/ProjectDisplay.css";
 import LinkIcon from "@material-ui/icons/Link";
+import { useSelector } from "react-redux";
 
 function ProjectDisplay() {
+  const currentLanguage = useSelector((state) => state.language.language);
   const { id } = useParams();
   const project = ProjectList[id];
   return (
     <div className="project">
       <h1> {project.name}</h1>
-      <img src={project.image} />
+      <a href={project.link} target="_blanck">
+        <img src={project.image} />
+      </a>
       <p>
-        <b>Skills:</b> {project.skills}
+        <b>{currentLanguage === "en" ? "Skills" : "Технології"} :</b>{" "}
+        {project.skills}
       </p>
       <div>
-        {" "}
         <a href={project.github} target="_blanck">
           <GitHubIcon />
         </a>

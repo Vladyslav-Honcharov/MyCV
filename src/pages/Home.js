@@ -4,14 +4,18 @@ import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
 import TelegramIcon from "@material-ui/icons/Telegram";
+import { useSelector } from "react-redux";
+import translations from "../helpers/translations"; // Импортируйте файл с переводами
 
 function Home() {
+  const currentLanguage = useSelector((state) => state.language.language);
+
   return (
     <div className="home">
       <div className="about">
-        <h2> Hi, My Name is Vladyslav</h2>
+        <h2>{translations[currentLanguage].hello}</h2>
         <div className="prompt">
-          <p>A frontend developer with a passion for learning and creating.</p>
+          <p>{translations[currentLanguage].developerDescription}</p>
           <a
             href="https://www.linkedin.com/in/vladyslav-honcharov-148a43261/"
             target="_blank"
@@ -40,27 +44,19 @@ function Home() {
         </div>
       </div>
       <div className="skills">
-        <h1> Skills</h1>
+        <h1>{translations[currentLanguage].skillsTitle}</h1>
         <ol className="list">
           <li className="item">
-            <h2>Hard skills</h2>
-            <span>
-              React, Redux, JavaScript, CSS/SCSS HTML, NPM, BootStrap,
-              MaterialUI, StyledComponents
-            </span>
+            <h2>{translations[currentLanguage].hardSkillsTitle}</h2>
+            <span>{translations[currentLanguage].hardSkillsList}</span>
           </li>
           <li className="item">
-            <h2>Soft skills</h2>
-            <span>
-              Multitasking, Analytical skills, Time management ,Team player
-            </span>
+            <h2>{translations[currentLanguage].softSkillsTitle}</h2>
+            <span>{translations[currentLanguage].softSkillsList}</span>
           </li>
           <li className="item">
-            <h2>Tech knowledges</h2>
-            <span>
-              Node.js, Express.js, Webpack/Gulp ,Git, Formik, Yup Material UI,
-              Boostrap
-            </span>
+            <h2>{translations[currentLanguage].techKnowledgesTitle}</h2>
+            <span>{translations[currentLanguage].techKnowledgesList}</span>
           </li>
         </ol>
       </div>

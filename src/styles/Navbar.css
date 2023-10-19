@@ -8,7 +8,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transform: translateX(20px);
+  /* transform: translateX(20px); */
 }
 .links {
   width: 100%;
@@ -67,11 +67,11 @@
 @media only screen and (max-width: 900px) {
   .navbar a {
     width: 70px;
-    transform: translateX(-30px);
+    /* transform: translateX(-30px); */
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .toggleButton {
     display: flex;
   }
@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .toggleButton {
     display: none;
   }
